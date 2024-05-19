@@ -126,7 +126,7 @@ jobs:
          echo "status=success" >> $GITHUB_OUTPUT
         
     - name: Upload firmware to release
-      uses: softprops/action-gh-release@v1
+      uses: softprops/action-gh-release@v2
       if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
          name: ${{ env.release_name }}
@@ -138,7 +138,7 @@ jobs:
          files: ${{ env.FIRMWARE }}/*
 
     - name: Delete older releases
-      uses: dev-drprasad/delete-older-releases@v0.2.1
+      uses: dev-drprasad/delete-older-releases@v0.3.3
       with:
         keep_latest: 3
         delete_tags: true

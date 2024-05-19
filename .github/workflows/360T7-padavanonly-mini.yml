@@ -12,8 +12,8 @@ on:
     - cron: '0 17 * * 1'
 
 env:
-  REPO_URL: https://github.com/padavanonly/immortalwrtARM
-  REPO_BRANCH: mt7981
+  REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x
+  REPO_BRANCH: openwrt-21.02
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: ./doc/config/360T7-padavanonly-mini.config
   DIY_P1_SH: ./doc/diy/diy-360T7-hanwckf-1.sh
@@ -22,7 +22,7 @@ env:
   
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-21.04
     permissions:
       contents: write
       

@@ -2,7 +2,7 @@ name: Update Checker padavanonly
 
 env:
   REPO_URL: https://github.com/padavanonly/immortalwrtARM
-  REPO_BRANCH: mt7981
+  REPO_BRANCH: 21.02
 
 on:
   workflow_dispatch:

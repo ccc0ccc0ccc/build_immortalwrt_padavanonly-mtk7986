@@ -1,7 +1,7 @@
 name: Update Checker padavanonly
 
 env:
-  REPO_URL: https://github.com/padavanonly/immortalwrtARM
+  REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x
   REPO_BRANCH: openwrt-21.02
 
 on:

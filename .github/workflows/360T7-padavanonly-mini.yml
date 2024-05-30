@@ -112,8 +112,8 @@ jobs:
       id: organize
       if: steps.compile.outputs.status == 'success' && !cancelled()
       run: |
-         tar -cvf openwrt/bin/targets/mediatek/mt7981/packages.tar openwrt/bin/packages
-         cd openwrt/bin/targets/mediatek/mt7981
+         tar -cvf openwrt/bin/targets/mediatek/mt7986/packages.tar openwrt/bin/packages
+         cd openwrt/bin/targets/mediatek/mt7986
          rm -rf packages
          rm -rf feeds.buildinfo
          rm -rf sha256sums
